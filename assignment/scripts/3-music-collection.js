@@ -17,7 +17,13 @@ function addToCollection(collection, title, artist, yearPublished) {
   return newAlbum;
 }
 
-
+// Use addToCollection function to add albums to myCollection
+console.log(addToCollection(myCollection, 'Make Yourself', 'Incubus', 1999));
+console.log(addToCollection(myCollection, 'Metallica', 'Metallica', 1991));
+console.log(addToCollection(myCollection, 'Morning View', 'Incubus', 2001));
+console.log(addToCollection(myCollection, 'Look Sharp', 'Roxette', 1988));
+console.log(addToCollection(myCollection, 'Spark', 'Drake White', 2016));
+console.log(addToCollection(myCollection, 'Baby Beluga', 'Raffi', 1980));
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
