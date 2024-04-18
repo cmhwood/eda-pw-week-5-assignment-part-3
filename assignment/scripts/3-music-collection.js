@@ -1,11 +1,21 @@
-console.log('***** Music Collection *****')
+console.log('***** Music Collection *****');
 // Safe Zone -- Write code below this line
 
-myCollection = []
+const myCollection = [];
 
-function addToCollection
+function addToCollection(collection, title, artist, yearPublished) {
+  newAlbum = {
+    collection: collection,
+    title: title,
+    artist: artist,
+    yearPublished: yearPublished,
+  };
+  // Add the new album to the collection
+  collection.push(newAlbum);
 
-
+  // Return the newly created object
+  return newAlbum;
+}
 
 
 
@@ -14,12 +24,16 @@ function addToCollection
 // (It's used for automated testing.)
 try {
   module.exports = {
-    myCollection: typeof myCollection !== 'undefined' ? myCollection : undefined,
-    addToCollection: typeof addToCollection !== 'undefined' ? addToCollection : undefined,
-    showCollection: typeof showCollection !== 'undefined' ? showCollection : undefined,
-    findByArtist: typeof findByArtist !== 'undefined' ? findByArtist : undefined,
+    myCollection:
+      typeof myCollection !== 'undefined' ? myCollection : undefined,
+    addToCollection:
+      typeof addToCollection !== 'undefined' ? addToCollection : undefined,
+    showCollection:
+      typeof showCollection !== 'undefined' ? showCollection : undefined,
+    findByArtist:
+      typeof findByArtist !== 'undefined' ? findByArtist : undefined,
     search: typeof search !== 'undefined' ? search : undefined,
-  }
+  };
 } catch (e) {
   // Do nothing
 }
